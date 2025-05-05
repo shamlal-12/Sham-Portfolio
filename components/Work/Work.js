@@ -139,7 +139,7 @@ const Work = () => {
                     </li>
                     <li className="flex items-start gap-4 text-gray-200 group-hover:text-white text-lg font-medium font-sans transition-colors duration-300">
                       <span className="text-indigo-400 text-2xl font-bold mt-0.5 group-hover:scale-110 transition-transform duration-300">•</span>
-                      <span className="leading-relaxed">Bronze Medal – Queen's Commonwealth Essay Competition (2023)</span>
+                      <span className="leading-relaxed">Bronze Medal – Queen&apos;s Commonwealth Essay Competition (2023)</span>
                     </li>
                     <li className="flex items-start gap-4 text-gray-200 group-hover:text-white text-lg font-medium font-sans transition-colors duration-300">
                       <span className="text-indigo-400 text-2xl font-bold mt-0.5 group-hover:scale-110 transition-transform duration-300">•</span>
