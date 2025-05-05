@@ -127,7 +127,6 @@ export const PROJECTS = [
   {
     name: "Personal Voice Assistant",
     image: "/projects/voiceAssistant.png",
-    blurImage: "/projects/blur/voiceAssistant-blur.png",
     description:
       "Python-based voice assistant for speech commands, app control, YouTube, and more. Integrated speech recognition and system-level controls.",
     gradient: ["#F14658", "#DC2537"],
@@ -137,7 +136,6 @@ export const PROJECTS = [
   {
     name: "ML Model for Students Career Counseling",
     image: "/projects/AIcareer.jpg",
-    blurImage: "/projects/blur/AIcareer-blur.jpg",
     description:
       "Career recommendation system using ML and statistical analysis for data-driven guidance.",
     gradient: ["#FFA62E", "#EA4D2C"],
@@ -147,7 +145,6 @@ export const PROJECTS = [
   {
     name: "Human Attributes Detector GenAI",
     image: "/projects/aidetection.png",
-    blurImage: "/projects/blur/aidetection-blur.png",
     description:
       "GenAI using Google Gemini AI and Streamlit to analyze gender, age, ethnicity, emotions, and more from images.",
     gradient: ["#000066", "#6699FF"],
@@ -157,7 +154,6 @@ export const PROJECTS = [
   {
     name: "AI Virtual Mouse",
     image: "/projects/virtualMouse.jpg",
-    blurImage: "/projects/blur/virtualMouse-blur.jpg",
     description:
       "Virtual Mouse using OpenCV, MediaPipe, and PyAutoGUI for touch-free PC control via hand gestures.",
     gradient: ["#142D46", "#2E4964"],
@@ -167,7 +163,6 @@ export const PROJECTS = [
   {
     name: "TedPal TedTalks Chatbot",
     image: "/projects/chatbot.png",
-    blurImage: "/projects/blur/chatbot-blur.png",
     description:
       "RAG-based AI chatbot delivering TEDTalk insights instantly, boosting learning and productivity.",
     gradient: ["#8B31FF", "#7000FF"],
@@ -177,7 +172,6 @@ export const PROJECTS = [
   {
     name: "Personal AI Chatbot",
     image: "/projects/chatbot.png",
-    blurImage: "/projects/blur/chatbot-blur.png",
     description:
       "Custom AI chatbot providing personalized responses about my work, projects, and expertise.",
     gradient: ["#00C9A7", "#005F73"],
@@ -187,7 +181,6 @@ export const PROJECTS = [
   {
     name: "Medical-Cost-Predictor",
     image: "/projects/MedicalBillPredictor.png",
-    blurImage: "/projects/blur/MedicalBillPredictor-blur.png",
     description:
       "Streamlit-based app for instant insurance cost estimates using ML, improving healthcare analytics.",
     gradient: ["#FFB703", "#FB8500"],
