@@ -68,7 +68,7 @@ export const SOCIAL_LINKS = [
   },
   {
     name: "youtube",
-    url: "https://www.youtube.com/",
+    url: "https://www.youtube.com/@FirstAISinger24",
   },
 ];
 
