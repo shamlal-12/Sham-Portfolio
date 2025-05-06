@@ -87,31 +87,31 @@ const Projects = ({ isDesktop, clientHeight }) => {
         isDesktop && "min-h-screen"
       } w-full relative select-none section-container transform-gpu`}
     >
-      <div className="flex flex-col py- justify-center h-full">
+      <div className="flex flex-col py-8 md:py-12 justify-center h-full">
         <div
           className="flex flex-col inner-container transform-gpu"
           ref={sectionTitleRef}
         >
-          <p className="uppercase tracking-widest text-gray-light-1 staggered-reveal">
+          <p className="uppercase tracking-widest text-gray-light-1 staggered-reveal text-sm md:text-base">
             PROJECTS
           </p>
-          <h1 className="text-6xl mt-2 font-medium text-gradient w-fit staggered-reveal">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl mt-2 font-medium text-gradient w-fit staggered-reveal">
             My Projects
           </h1>
-          <h2 className="text-[1.65rem] font-medium md:max-w-lg max-w-sm mt-2 staggered-reveal">
+          <h2 className="text-lg md:text-xl lg:text-[1.65rem] font-medium md:max-w-lg max-w-sm mt-2 staggered-reveal">
             Some things I&apos;ve built with love, expertise and a pinch of
             magical ingredients.{" "}
           </h2>
         </div>
         <div
           className={`${
-            clientHeight > 650 ? "mt-12" : "mt-8"
-          } flex project-wrapper no-scrollbar w-fit staggered-reveal`}
+            clientHeight > 650 ? "mt-8 md:mt-12" : "mt-6 md:mt-8"
+          } flex project-wrapper no-scrollbar w-fit staggered-reveal overflow-x-auto pb-4`}
         >
           {PROJECTS.map((project, index) => (
             <ProjectTile
               classes={
-                index === PROJECTS.length - 1 ? "" : "mr-10 xs:mr-12 sm:mr-16"
+                index === PROJECTS.length - 1 ? "" : "mr-6 sm:mr-10 md:mr-12 lg:mr-16"
               }
               project={project}
               key={project.name}

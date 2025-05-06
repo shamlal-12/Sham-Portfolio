@@ -65,23 +65,26 @@ const Hero = () => {
     <section
       ref={sectionRef}
       id={MENULINKS[0].ref}
-      className="w-full flex md:items-center py-8 2xl:container mx-auto xl:px-20 md:px-12 px-4 min-h-screen relative mb-24"
+      className="w-full flex md:items-center py-8 2xl:container mx-auto xl:px-20 md:px-12 px-4 min-h-screen relative mb-12 md:mb-24"
       style={{ opacity: 0 }}
     >
       <style global jsx>
         {`
           .typed-cursor {
-            font-size: 2rem;
+            font-size: 1.5rem;
+            @media (min-width: 768px) {
+              font-size: 2rem;
+            }
           }
         `}
       </style>
-      <div className="flex flex-col pt-40 md:pt-0 select-none">
+      <div className="flex flex-col pt-20 md:pt-40 lg:pt-0 select-none">
         <h5
-          className={`${styles.intro} font-mono font-medium text-indigo-light staggered-reveal`}
+          className={`${styles.intro} font-mono font-medium text-indigo-light staggered-reveal text-sm md:text-base`}
         >
           Hi, my name is
         </h5>
-        <h1 className={`${styles.heroName} text-white text-6xl font-semibold`}>
+        <h1 className={`${styles.heroName} text-white text-4xl md:text-5xl lg:text-6xl font-semibold`}>
           <span className={`relative ${styles.emphasize} staggered-reveal`}>
             Shaam
           </span>
@@ -90,7 +93,7 @@ const Hero = () => {
         <p>
           <span
             ref={typedElementRef}
-            className="staggered-reveal text-3xl text-gray-light-3 font-mono leading-relaxed"
+            className="staggered-reveal text-xl md:text-2xl lg:text-3xl text-gray-light-3 font-mono leading-relaxed"
           />
         </p>
         <div className="staggered-reveal">

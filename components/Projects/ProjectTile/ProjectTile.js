@@ -31,13 +31,13 @@ const ProjectTile = ({ project, classes, isDesktop }) => {
       target="_blank"
       rel="noreferrer"
       style={{
-        maxWidth: isDesktop ? "calc(100vw - 2rem)" : "calc(100vw - 4rem)",
+        maxWidth: isDesktop ? "calc(100vw - 2rem)" : "calc(100vw - 2rem)",
         flex: "1 0 auto",
         WebkitMaskImage: "-webkit-radial-gradient(white, black)",
       }}
     >
       <div
-        className={`h-[25rem] w-[38rem] bg-black ${styles.ProjectTile} rounded-3xl relative p-6 flex flex-col justify-between max-w-full`}
+        className={`h-[20rem] sm:h-[22rem] md:h-[25rem] w-[20rem] sm:w-[28rem] md:w-[38rem] bg-black ${styles.ProjectTile} rounded-3xl relative p-4 sm:p-5 md:p-6 flex flex-col justify-between max-w-full`}
         style={{
           background: `linear-gradient(90deg, ${gradient[0]} 0%, ${gradient[1]} 100%)`,
         }}
@@ -54,25 +54,25 @@ const ProjectTile = ({ project, classes, isDesktop }) => {
           className="absolute w-full h-full top-0 left-0 object-cover z-0 rounded-3xl"
         />
         <div
-          className="absolute top-0 left-0 w-full h-20"
+          className="absolute top-0 left-0 w-full h-16 sm:h-20"
           style={{
             background: `linear-gradient(180deg, ${gradient[0]} 0%, rgba(0,0,0,0) 100%)`,
           }}
         />
         <div
-          className="absolute bottom-0 left-0 w-full h-32"
+          className="absolute bottom-0 left-0 w-full h-24 sm:h-32"
           style={{
             background: `linear-gradient(0deg, ${gradient[0]} 10%, rgba(0,0,0,0) 100%)`,
           }}
         />
         <h1
-          className="font-medium text-3xl sm:text-4xl z-10 pl-2 transform-gpu"
+          className="font-medium text-2xl sm:text-3xl md:text-4xl z-10 pl-2 transform-gpu"
           style={{ transform: "translateZ(3rem)" }}
         >
           {name}
         </h1>
         <h2
-          className="text-lg z-10 tracking-wide font-medium text-white transform-gpu"
+          className="text-base sm:text-lg z-10 tracking-wide font-medium text-white transform-gpu"
           style={{ transform: "translateZ(0.8rem)" }}
         >
           {description}

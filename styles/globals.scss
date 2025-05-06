@@ -18,6 +18,9 @@ html {
   -webkit-font-smoothing: antialiased;
 
   @media (min-width: 320px) {
+    font-size: 13px;
+  }
+  @media (min-width: 480px) {
     font-size: 14px;
   }
   @media (min-width: 768px) {
@@ -87,6 +90,13 @@ body {
 a,
 input[type="checkbox"] {
   cursor: none !important;
+}
+
+@media (max-width: 768px) {
+  a,
+  input[type="checkbox"] {
+    cursor: auto !important;
+  }
 }
 
 .outer-menu {
