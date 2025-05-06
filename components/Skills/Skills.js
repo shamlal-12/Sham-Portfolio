@@ -36,7 +36,7 @@ const Skills = () => {
       id={MENULINKS[1].ref}
       className="w-full relative select-none mt-44"
     >
-      <div className="section-container py-16 flex flex-col justify-center">
+      <div className="section-container py-16 flex flex-col justify-center px-2">
         <img
           src="/right-pattern.svg"
           alt=""
@@ -58,48 +58,48 @@ const Skills = () => {
             </h2>
           </div>
           <div className="mt-10">
-            <h3 className="uppercase tracking-widest text-gray-light-2 font-medium text-base mb-4 staggered-reveal">
+            <h3 className="uppercase tracking-widest text-gray-light-2 font-medium text-base md:text-lg mb-4 staggered-reveal">
               LANGUAGES AND TOOLS
             </h3>
-            <div className="flex items-center flex-wrap gap-6 staggered-reveal">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4 sm:gap-6 items-center sm:items-start staggered-reveal">
               {SKILLS.languagesAndTools.map((skill) => (
-                <div key={skill} className="flex flex-col items-center">
+                <div key={skill} className="flex flex-col items-center w-20 sm:w-24 mb-4 sm:mb-0">
                   <Image
                     src={`/skills/${skill}.svg`}
                     alt={skill}
                     width={50}
                     height={50}
                   />
-                  <span className="text-sm text-gray-light-2 mt-2">{skill.toLowerCase() === 'cplusplus' ? 'C++' : skill.charAt(0).toUpperCase() + skill.slice(1)}</span>
+                  <span className="text-xs sm:text-sm text-gray-light-2 mt-2 text-center break-words">{skill.toLowerCase() === 'cplusplus' ? 'C++' : skill.charAt(0).toUpperCase() + skill.slice(1)}</span>
                 </div>
               ))}
             </div>
           </div>
           <div className="mt-10">
-            <h3 className="uppercase tracking-widest text-gray-light-2 font-medium text-base mb-4 staggered-reveal">
+            <h3 className="uppercase tracking-widest text-gray-light-2 font-medium text-base md:text-lg mb-4 staggered-reveal">
               LIBRARIES AND FRAMEWORKS
             </h3>
-            <div className="flex flex-wrap gap-6 transform-gpu staggered-reveal">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4 sm:gap-6 items-center sm:items-start transform-gpu staggered-reveal">
               {SKILLS.librariesAndFrameworks.map((skill) => (
-                <div key={skill} className="flex flex-col items-center">
+                <div key={skill} className="flex flex-col items-center w-20 sm:w-24 mb-4 sm:mb-0">
                   <Image
                     src={`/skills/${skill}.svg`}
                     alt={skill}
                     width={50}
                     height={50}
                   />
-                  <span className="text-sm text-gray-light-2 mt-2">{skill.toLowerCase() === 'cplusplus' ? 'C++' : skill.charAt(0).toUpperCase() + skill.slice(1)}</span>
+                  <span className="text-xs sm:text-sm text-gray-light-2 mt-2 text-center break-words">{skill.toLowerCase() === 'cplusplus' ? 'C++' : skill.charAt(0).toUpperCase() + skill.slice(1)}</span>
                 </div>
               ))}
             </div>
           </div>
           {/* Soft Skills Section */}
           <div className="mt-10">
-            <h3 className="uppercase tracking-widest text-white font-medium text-base mb-4 staggered-reveal">
+            <h3 className="uppercase tracking-widest text-white font-medium text-base md:text-lg mb-4 staggered-reveal">
               PROFESSIONAL SKILLS
             </h3>
-            <ul className="space-y-3 text-lg text-gray-light-2 staggered-reveal">
-              <li className="flex items-center gap-3">
+            <ul className="space-y-3 text-sm sm:text-base md:text-lg text-gray-light-2 staggered-reveal">
+              <li className="flex items-center gap-3 flex-wrap">
                 <span className="inline-block">
                   <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="11" cy="11" r="11" fill="url(#grad1)" />
@@ -114,7 +114,7 @@ const Skills = () => {
                 </span>
                 Problem Solving Skills
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex items-center gap-3 flex-wrap">
                 <span className="inline-block">
                   <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="11" cy="11" r="11" fill="url(#grad1)" />
@@ -129,7 +129,7 @@ const Skills = () => {
                 </span>
                 Communication Skill
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex items-center gap-3 flex-wrap">
                 <span className="inline-block">
                   <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="11" cy="11" r="11" fill="url(#grad1)" />
@@ -144,7 +144,7 @@ const Skills = () => {
                 </span>
                 Group Collaboration Work
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex items-center gap-3 flex-wrap">
                 <span className="inline-block">
                   <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="11" cy="11" r="11" fill="url(#grad1)" />
