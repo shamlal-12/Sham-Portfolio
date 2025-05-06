@@ -80,7 +80,7 @@ const Hero = () => {
       </style>
       <div className="flex flex-col pt-20 md:pt-40 lg:pt-0 select-none">
         <h5
-          className={`${styles.intro} font-mono font-medium text-indigo-light staggered-reveal text-base sm:text-lg md:text-xl`}
+          className={`${styles.intro} font-mono font-medium text-indigo-light staggered-reveal text-lg sm:text-xl md:text-2xl lg:text-3xl`}
         >
           Hi, my name is
         </h5>
