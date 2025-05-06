@@ -67,6 +67,10 @@ export const SOCIAL_LINKS = [
     url: "https://www.instagram.com/",
   },
   {
+    name: "twitter",
+    url: "https://x.com/",
+  },
+  {
     name: "youtube",
     url: "https://www.youtube.com/@FirstAISinger24",
   },

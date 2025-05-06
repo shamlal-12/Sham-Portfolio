@@ -2,8 +2,13 @@
   display: inline-flex;
   padding: 1.7rem 0 1rem 0;
   gap: 1.5rem;
+  align-items: center;
 
   & > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     &:hover,
     &:focus {
       filter: drop-shadow(0 0 1rem theme("colors.indigo.light"));
@@ -11,6 +16,12 @@
       svg {
         stroke: theme("colors.indigo.light");  
       }
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+      stroke: currentColor;
     }
   }
 }
