@@ -163,6 +163,24 @@ const Skills = () => {
           </div>
         </div>
       </div>
+      <style jsx>{`
+        @media (max-width: 639px) {
+          .skills-wrapper > div > div.flex {
+            flex-direction: row !important;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            gap: 1.5rem;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            padding-bottom: 1rem;
+          }
+          .skills-wrapper > div > div.flex > div {
+            min-width: 5rem;
+            margin-bottom: 0 !important;
+          }
+        }
+      `}</style>
     </section>
   );
 };

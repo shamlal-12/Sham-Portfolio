@@ -64,7 +64,7 @@ const Work = () => {
           </div>
 
           {/* Education Section */}
-          <div className="mt-32">
+          <div className="mt-32" id="education">
             <div className="flex flex-col">
               <p className="uppercase tracking-widest text-gray-light-1">
                 EDUCATION
@@ -109,7 +109,7 @@ const Work = () => {
           </div>
 
           {/* Awards Section */}
-          <div className="mt-32">
+          <div className="mt-32" id="awards">
             <div className="flex flex-col">
               <p className="uppercase tracking-widest text-gray-light-1">
                 ACHIEVEMENTS

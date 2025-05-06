@@ -31,7 +31,7 @@ const error = () =>
   });
 
 const success = () =>
-  toast.success("Message sent successfully", {
+  toast.success("Message has been Successfully Received Thank you for Contact me ❤️", {
     id: "success",
   });
 
@@ -82,12 +82,15 @@ const Contact = () => {
         if (res.status === 200) {
           setMailerResponse("success");
           emptyForm();
+          success();
         } else {
           setMailerResponse("error");
+          error();
         }
       })
       .catch((err) => {
         setMailerResponse("error");
+        error();
         console.error(err);
       });
   };
@@ -324,13 +327,6 @@ const Contact = () => {
               </label>
             </div>
           </Fade>
-
-          {mailerResponse !== "not initiated" &&
-            (mailerResponse === "success" ? (
-              <div className="hidden">{success()}</div>
-            ) : (
-              <div className="hidden">{error()}</div>
-            ))}
         </form>
         <div className="mt-9 mx-auto link">
           <button

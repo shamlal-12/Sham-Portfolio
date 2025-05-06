@@ -38,6 +38,14 @@ export const MENULINKS = [
     ref: "work",
   },
   {
+    name: "Awards",
+    ref: "awards",
+  },
+  {
+    name: "Education",
+    ref: "education",
+  },
+  {
     name: "Contact",
     ref: "contact",
   },
