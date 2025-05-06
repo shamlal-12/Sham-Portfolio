@@ -80,13 +80,16 @@ const Hero = () => {
       </style>
       <div className="flex flex-col pt-20 md:pt-40 lg:pt-0 select-none">
         <h5
-          className={`${styles.intro} font-mono font-medium text-indigo-light staggered-reveal text-sm md:text-base`}
+          className={`${styles.intro} font-mono font-medium text-indigo-light staggered-reveal text-base sm:text-lg md:text-xl`}
         >
           Hi, my name is
         </h5>
-        <h1 className={`${styles.heroName} text-white text-4xl md:text-5xl lg:text-6xl font-semibold`}>
-          <span className={`relative ${styles.emphasize} staggered-reveal`}>
-            Shaam
+        <h1 className={`${styles.heroName} text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold`}>
+          <span className={`relative ${styles.emphasize} staggered-reveal`} style={{ display: 'inline-block' }}>
+            <span className="block">
+              Shaam
+              <span className="hidden sm:block" style={{ position: 'absolute', left: 0, bottom: 0, width: '100%', height: '0.35rem', borderRadius: '1rem', background: 'linear-gradient(to right, #9f55ff, #7000ff)', boxShadow: '0 0 1rem #7000ff' }}></span>
+            </span>
           </span>
           <span className="staggered-reveal"> Lal</span>
         </h1>
