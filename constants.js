@@ -106,7 +106,7 @@ export const PROJECTS = [
     tech: ["Python"],
   },
   {
-    name: "ML Model for Students Career Counseling",
+    name: "AI Students Career Counseling",
     image: "/projects/AIcareer.jpg",
     description:
       "Career recommendation system using ML and statistical analysis for data-driven guidance.",
