@@ -156,7 +156,7 @@ export const PROJECTS = [
     description:
       "Streamlit-based app for instant insurance cost estimates using ML, improving healthcare analytics.",
     gradient: ["#FFB703", "#FB8500"],
-    url: "https://github.com/shamlal-12/Medical-Cost-Prediction",
+    url: "https://sham-portfolio-jet.vercel.app/",
     tech: ["ML", "Python"],
   },
 ];

@@ -154,6 +154,45 @@ const Work = () => {
               </div>
             </div>
           </div>
+
+          {/* Projects Section */}
+          <div className="mt-32" id="projects">
+            <div className="flex flex-col">
+              <p className="uppercase tracking-widest text-gray-light-1">
+                PROJECTS
+              </p>
+              <h1 className="text-6xl mt-2 font-medium text-gradient w-fit">
+                Featured Projects
+              </h1>
+              <h2 className="text-[1.65rem] font-medium md:max-w-lg w-full mt-2">
+                Some of my notable projects and applications. {" "}
+              </h2>
+            </div>
+            <div className="mt-12 space-y-6">
+              <div className="transform hover:scale-[1.02] transition-all duration-300">
+                <div className="bg-gradient-to-br from-indigo-500/30 via-purple-700/20 to-indigo-900/30 border-4 border-transparent rounded-3xl p-10 shadow-2xl hover:shadow-indigo-500/40 group relative overflow-hidden" style={{borderImage: 'linear-gradient(135deg, #8B31FF 10%, #7000ff 90%) 1'}}>
+                  <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                    <div>
+                      <a href="https://medical-cost-predictions.streamlit.app/" target="_blank" rel="noopener noreferrer" className="text-3xl font-extrabold font-sans text-white group-hover:text-indigo-300 transition-colors duration-300 tracking-tight hover:underline">
+                        Medical Cost Prediction
+                      </a>
+                      <p className="text-indigo-300 mt-2 font-semibold text-xl font-sans">Machine Learning Project</p>
+                    </div>
+                    <div className="flex flex-col items-end">
+                      <span className="text-gray-200 bg-indigo-900/60 px-6 py-2 rounded-full text-lg font-semibold font-sans border border-indigo-400/30">
+                        Live Demo
+                      </span>
+                    </div>
+                  </div>
+                  <div className="mt-8">
+                    <p className="text-gray-200 group-hover:text-white text-lg font-medium font-sans transition-colors duration-300">
+                      A machine learning application that predicts medical costs based on various factors. Built using Python, Streamlit, and machine learning algorithms.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
